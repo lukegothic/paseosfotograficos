@@ -1,0 +1,1 @@
+aplicacion que lee datos GPS de fotos y genera una ruta optimizada para visitar cada uno de los lugares de las fotos.

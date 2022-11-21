@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!--<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />-->
+        <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body class="fh container-fluid">
+      <div class="row row-no-padding fh">
+        <div id="preview-container" class="preview-container col-xs-3">
+          <div id="preview-template" style="display: none;">
+            <div class="dz-details">
+              <div class="locationNumber"></div>
+              <div class="input-group filename">
+                <input type="text" class="form-control name">
+                <div class="input-group-btn"><label class="btn btn-default edit" type="button"><i class="glyphicon glyphicon-pencil"></i></label></div>
+              </div>
+              <img draggable="false" data-dz-thumbnail />
+              <button class="btn btn-danger delete"><i class="glyphicon glyphicon-trash"></i></button>
+            </div>
+            <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+            <div class="dz-success-mark"><span>?</span></div>
+            <div class="dz-error-mark"><span>?</span></div>
+            <div class="dz-error-message"><span data-dz-errormessage></span></div>
+          </div>
+          <div class="actionbar">
+          <!--
+            <p>
+              <div class="input-group">
+                <div class="input-group-btn" data-toggle="buttons">
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Ver como ruta
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Ver como puntos de inter&eacute;s
+                  </label>
+                </div>
+              </div>
+            </p>
+            -->
+            <p>
+              <button type="button" id="shareButton" class="btn btn-lg btn-primary" aria-label="Compartir">
+                <span class="glyphicon glyphicon-share" aria-hidden="true"></span> <strong>COMPARTIR</strong>
+              </button>
+            </p>
+          </div>
+        </div>
+        <div id="map" class="fh col-xs-9"></div>
+      </div>
+      <!--<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>-->
+      <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+      <script src="js/vendor/leaflet-routing-machine.js"></script>
+      <script src="js/vendor/dropzone.js"></script>
+      <script src="js/vendor/Sortable.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>

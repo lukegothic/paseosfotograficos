@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+	height: 100%;
+}
+.fh {
+	height:100%;
+}
+.leaflet-div-icon {
+	background: transparent;
+	border: none;
+}
+.leaflet-marker-icon .number {
+	position: relative;
+	font-size: 15px;
+	width: 34px;
+	line-height: 34px;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 1);
+	font-weight: bold;
+	font-family: Helvetica;
+	color: #fff;
+	top: -34px;
+}
+
+.container-fluid:before {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.6);
+	display:none;
+	content:"Suelta tus fotos aqui";
+	z-index: 800;
+}
+.dz-drag-hover:before {
+	/*display:block;*/
+}
+.actionbar {
+	position: fixed;
+	background-color:#777;
+	width:25%;
+	height:10%;
+	bottom:0;
+	text-align: center;
+	z-index:1;
+}
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.preview-container {
+	overflow:auto;
+	height:90%;
+	background-color: #777;
+}
+.dz-details {
+	height:33%;
+	position: relative;
+    transform: scale(0.97);
+    border: 5px solid #fff;
+}
+.dz-details .locationNumber {
+	position: absolute;
+	top:0;
+	height: 100%;
+	width: 5%;
+	color:#fff;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Helvetica;
+    text-align: center;
+    padding-top: 5px;
+    background: #666666;
+}
+.dz-details .locationNumber.hasMarker {
+	background: #4000c5;
+}
+.dz-details .filename {
+	position: absolute;
+	bottom: 0;
+	right:0;
+	width:95%;
+	background-color: #fff;
+}
+.dz-details .delete {
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+.dz-details .name {
+	width: 100%;
+	line-height: 30px;
+	font-size: 18px;
+	display:inline-block;
+	padding-left:5px;
+    color: #000;
+    font-size: 26px;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+.dz-details img {
+	height:100%;
+	width:100%;
+	object-fit:cover;
+}
+.dragged {
+	border:0;
+}
+.dragged:after {
+	content:" ";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #ccc;
+	top:0;
+	left:0;
+	z-index: 3;
+	box-shadow: inset 0 3px 8px #000;
+}
+.leaflet-routing-container {
+	display: none;
+}
